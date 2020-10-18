@@ -1,0 +1,52 @@
+.banner{
+    background-color: black;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 30% 30% 30% ;
+    color: white;
+}
+.danhmuc{
+    color: red;
+    text-align: center;
+    padding-top: 17px;
+    font-size: 26px;
+}
+.quanly{
+    padding-top: 20px;
+    color: red;
+    text-align: center;
+}
+.name {
+    text-align: center;
+    padding: 20px 0px 0px 0px ;
+    color: red;
+}
+.name a{
+    text-decoration: none;
+    color: red;
+}
+.menu{
+    background-color: #1c0b0bf5;
+    height: 53px;
+   text-align: center;
+   
+}
+.menu>ul>li{
+    display: inline-table;
+    text-align: center;
+    padding: 4px 30px; 
+    color: white;
+    margin-top: 10px;
+    
+    
+}
+.menu>ul>li>a{
+    text-decoration: none;
+    color: white;
+   
+}
+.menu>ul> li:hover{
+    background-color: red;
+    border-radius: 8px;
+    transition: 1.2s; 
+}

@@ -1,0 +1,14 @@
+
+ #customize-theme-controls #accordion-panel-theme_option_panel h3.accordion-section-title
+ 
+{
+   background-color:#EE1750;
+   color: #FFF;
+}
+
+
+#customize-theme-controls #accordion-panel-theme_option_panel h3.accordion-section-title:after
+{
+   color: #FFF;
+}
+

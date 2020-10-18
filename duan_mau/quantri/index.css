@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: auto;
+    padding: 0;
+   
+    background-color: antiquewhite;
+}
+
+
+.header {
+    background-color: rgb(216, 189, 153);
+    height: 3em;
+   margin-bottom: 0.5rem;
+   margin-top: 0.5rem;
+   text-align: center;
+}
+#tieude  h4 a{
+    text-decoration: none;
+    font-size: 15px;
+    color: red;
+}
+#tieude h4{
+    margin-left:2em;
+    line-height: 1.7em;
+    padding: 0px;
+    
+}
+.fa{
+    position: relative;
+}
+ h3 a{
+    color: black;
+    display: block;
+    margin-left: 0.1em;
+    text-decoration: none;
+}
+.abc{
+    background-color: #e1966e;
+    margin-left: 10px;
+    text-align: center;
+    width: 20px;
+}
+.abc ::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: red;
+    transition: 1.2s;
+  
+}
+.abc :hover::before{
+    width: 100%;
+    color: yellow;
+    text-decoration: none;
+}
+.abc h3 a :hover::before{
+    width: 100%;
+    color: yellow;
+    text-decoration: none;
+}

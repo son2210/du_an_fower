@@ -1,0 +1,29 @@
+#customize-controls .control-section-blog-web .accordion-section-title:hover,
+#customize-controls .control-section-blog-web .accordion-section-title:focus {
+	background-color: #fff;
+}
+
+.control-section-blog-web .accordion-section-title .button {
+	margin-top:  -4px;
+	font-weight: 400;
+	margin-left: 8px;
+}
+
+	.rtl .control-section-blog-web .accordion-section-title .button {
+		margin-left:  0;
+		margin-right: 8px;
+	}
+	.at-pro,li#accordion-panel-theme_option_panel h3.accordion-section-title, #widget-30_author-widget-__i__ .widget .widget-top {
+		background: #dd3333!important;
+		color: #fff!important;
+		box-shadow: none!important;
+	}
+
+	#accordion-section-blog-web .wp-core-ui .button, .wp-core-ui .button-secondary
+	{
+		border-color: #dd3333!important;
+	}
+.at-pro:hover {
+	background: #dd3333!important;
+	color: #fff!important;
+}

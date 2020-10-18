@@ -1,0 +1,272 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px auto;
+    padding: 0px;
+}
+.container{
+    padding: 0px !important;
+}
+header{
+    margin-top: 4px;
+    padding:10x;
+    box-sizing: border-box;
+    background-image: url('../img/img_logo/logo.jpg') ;
+    height: 110px;
+    background-repeat: no-repeat;
+    text-align: center;
+ 
+}
+header a{
+    color: white ;
+    text-shadow: -2px -2px 2px red;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 800;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+header a:hover{
+    color: white !important;
+}
+/*  hader đầu  */
+.menu{
+    position: relative;
+    background-color: red;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 15% 25% 35% 25%;  
+    
+}
+.quantri  {
+    padding-top:10px;
+    list-style: none;
+    position: relative;
+    font-size: 17px;
+    text-align: center;
+    color: white;
+}
+#menucon{
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    display:none ;
+    z-index: 999; 
+}
+#menucon li {
+    background-color: red;
+    padding: 3px 50px;
+    list-style: none;
+}
+#menucon li a {
+    color: black;
+    text-decoration: none;
+}
+.quantri  :hover #menucon{
+    display: block;
+}
+#menucon :hover{
+    background-color: rgb(126, 113, 113);
+    color: white;
+}
+.logo-menu img{
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.logo-menu >a{
+    color: white !important;
+    text-shadow: -2px -2px 2px red;
+    font-family: 'Great Vibes', cursive;
+    font-weight:40;
+    text-decoration: none;
+    padding-bottom: 10px !important;
+}
+.form-seach{
+  margin-top: 20px;
+}
+.form-seach input{
+    width: 90%;
+    outline: none;
+    border: red solid 2px;
+    border-radius: 10px;
+  
+}
+.form-seach button{
+    margin-left: -48px;
+    border:  none;
+    border-radius: 10px;
+    outline: none;
+}
+.text-menu ul {
+ 
+    padding: 15px 40px;
+    width: 100%;
+}
+.text-menu ul li{
+    display: inline-table;
+    list-style: none;
+    padding: 0px    ;
+    position: relative;
+}
+.text-menu ul li a{
+    color: white;
+    text-align: center;
+}
+
+.text-menu ul li ::before{
+    content:'';
+    position: absolute;
+    width: 0%;
+    height:4% ;
+    bottom:20%;
+    left: 10%;
+    background-color: yellow;
+    transition: 0.9s;
+}
+.text-menu ul  li  :hover::before{
+    width: 77%;
+}
+.nav-moble{
+    /* display: none; */
+    float: right;
+}
+.nav-moble button{
+    margin-top: px;
+    font-size: 40px;
+    
+    color: white;
+    background-color: red;
+    outline: none;
+    border: none;
+    display: none;
+    padding: 0px;
+    position: relative;
+}
+.menu-moble{
+    display: none;
+    width: 180px;
+    padding-left: 10px ;
+    position: fixed;
+    right:30px;
+    z-index: 909;
+    background-color: yellow;
+}
+.menu-moble ul li {
+    list-style: none;
+}
+.menu-moble li a {
+    padding: 0px !important;
+}
+/* banner  */
+.banner img{
+    margin-top: 3px;
+    width: 100% ;
+    height: 500px;
+    max-height: 500px;
+    margin-bottom: 5px;
+}
+
+
+/* menu 2 */
+.menu-2-banner{
+    background-color: blanchedalmond;
+  
+}
+.menu-2 a{
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(95, 80, 70);
+}
+#navbarNavDropdown ul {
+    padding: 0px 0px 0px 100x;
+}
+#navbarNavDropdown ul li  {
+        padding: 0px 20px ;
+}
+#navbarNavDropdown ul a {
+        font-size: 20px;
+        font-weight: 500;
+}
+.menu-2-banner{
+    margin-bottom: 30px;
+}
+
+/*  sản Phẩm  */
+.abc{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-gap: 15px;
+}
+
+.box1{
+    
+    box-shadow: 0px -1px 8px -1px #e58484;
+    width: 100%;
+    padding: 2% ;
+    height: 400px;
+    max-height: 400px;
+}
+.box1 a{
+    text-decoration: none !important;
+}
+.box1 a{
+    display: flex;
+   justify-content: center;
+   text-decoration: none;
+}
+.box1 a p{
+    margin: 0px;
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+}
+.box1 a label{
+    text-decoration: line-through;
+    color: black;
+    margin: 0px;
+}
+.box1 h4{
+    font-size: 18px;
+    height: 38px;
+    margin-top: 11px;
+}
+.box1 img{
+    max-width: 100%;
+   height: 270px;
+}
+.box1:hover img{
+    transform: scale(1.05);
+    opacity: 0.9;
+    transition: ease 1s;
+}
+.tieude{
+    color: red;
+    margin: 10px 0px;
+}
+/* footer */
+.footer{
+    height: 300px;
+    background-color: #cec5c5;
+    margin-top: 50px;
+    padding: 15px 30px ;
+}
+.footer-lef a{
+    text-decoration: none !important;
+    color: black;
+}
+a .icon-youtobe{
+    margin-top: 20px;
+    font-size: 70px;
+    color: red;
+    margin-left: 40px;
+}
+a .icon-facebook{
+    color: blue;
+    font-size:60px;
+    margin-top: -10px;
+}
+a .icon-twiter{
+    margin-left: 40px;
+    font-size: 70px;
+}

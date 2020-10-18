@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'mrs_saint_delafieldregular';
+    src: url('../fonts/mrssaintdelafield-regular-webfont.eot');
+    src: url('../fonts/mrssaintdelafield-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mrssaintdelafield-regular-webfont.woff2') format('woff2'),
+         url('../fonts/mrssaintdelafield-regular-webfont.woff') format('woff'),
+         url('../fonts/mrssaintdelafield-regular-webfont.ttf') format('truetype'),
+         url('../fonts/mrssaintdelafield-regular-webfont.svg#mrs_saint_delafieldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'georgiaitalic';
+    src: url('../fonts/georgia_italic-webfont.woff2') format('woff2'),
+         url('../georgia_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

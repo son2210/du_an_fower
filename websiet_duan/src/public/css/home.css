@@ -1,0 +1,358 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px auto;
+    padding: 0px;
+    /* overflow: hidden; */
+}
+/*  xoay  */
+.loader{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: #fff9f9;
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* overflow: hidden; */
+    z-index:899999;
+}
+.loader span{
+    font-size: 100px;
+    position: absolute;
+    top: 43%;
+    left: 46%;
+    color: #beb5a3;
+}
+.spiner{
+    animation: xoay 3s linear infinite;
+}
+@keyframes xoay{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+      color: yellow;
+        
+    }
+    50%{
+        color: green;
+      
+    }
+    75%{
+        color: greenyellow;
+    }
+    100%{
+        transform: rotate(360deg);
+        color: red;
+       
+    }
+  
+}
+.container{
+    padding: 0px !important;
+}
+header{
+    margin-top: 4px;
+    padding:10x;
+    box-sizing: border-box;
+    background-image: url('../img/logo.jpg') ;
+    height: 110px;
+    background-repeat: no-repeat;
+    text-align: center;
+ 
+}
+header a{
+    color: white ;
+    text-shadow: -2px -2px 2px red;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 800;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+header a:hover{
+    color: white !important;
+}
+.menu1{
+    position: relative;
+    background-color: red;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 15% 25% 35% 25%;  
+    
+}
+.logo-menu{
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.form-seach{
+    margin-top: 20px;
+  }
+  .form-seach input{
+      width: 90%;
+      outline: none;
+      border: red solid 2px;
+      border-radius: 10px;
+      padding-left: 10px;
+    
+  }
+  .form-seach button{
+      margin-left: -48px;
+      border:  none;
+      border-radius: 10px;
+      outline: none;
+  }
+.text_menu1 ul{
+    padding: 15px 0px;
+    width: 100%;
+}
+.text_menu1 ul li{
+    display: inline-table;
+    list-style: none;
+    padding: 0px  10px ;
+    position: relative;
+}
+.text_menu1 ul li a{
+    color: white;
+    text-align: center;
+}
+.text_menu1 ul li ::before{
+    content:'';
+    position: absolute;
+    width: 0%;
+    height:4% ;
+    bottom:20%;
+    left: 10%;
+    background-color: yellow;
+    transition: 0.9s;
+}
+.text_menu1 ul  li  :hover::before{
+    width: 77%;
+}
+.dangky ul{
+  padding-top: 22px;
+    width: 100%;
+   list-style: none;
+   
+}
+.dangky ul li{
+    display: inline-table;
+   padding: 0px 20px;
+   position: relative;
+}
+.dangky ul  li h5{
+    color: white;
+    font-size: 19px;
+    font-weight: 350;
+}
+/* sub_ menu  */
+#sub_menu{
+  position: absolute;
+  top: -3px;
+  width: 285px;  
+} 
+#sub_menu li {
+    list-style: none;
+}
+#sub_menu li ::before{
+    content:'';
+    position: absolute;
+    width: 0%;
+    height:6% ;
+    bottom:10%;
+    left: 10%;
+    background-color: yellow;
+    transition: 0.9s;
+}
+#sub_menu li   :hover::before{
+    width: 77%;
+}
+#sub_menu li a{
+    text-decoration: none;
+    color: white;
+}
+/* menu con  */
+#menucon{
+    z-index: 100;
+    position: absolute;
+    right: -2px;
+    top: 14px;
+    display:none ;
+}
+#menucon ul li{
+    list-style: none;
+    display: inline-table;
+    width: 100%;
+   text-align: center;
+   padding: 5px 20px;
+    border-radius: 5px;
+}
+#menucon a{
+    color: black;
+    text-decoration: none;
+}
+.dangky :hover #menucon{
+    display:block ;
+}
+.dangky :hover #menucon li{
+    background-color: red  ;
+    color: white;
+}
+.dangky :hover #menucon li a{
+    color: white;
+}
+/* banner */
+.banner{
+    margin-top: 5px;
+    height: 100px;
+    margin-bottom: 402px;
+}
+.banner_img{
+    height: 500px;
+}
+.banner_img img{
+    width: 100%;
+    height: auto;
+}
+/* menu2 */
+.menu-2-banner{
+    background-color: blanchedalmond;
+  
+}
+.menu-2 a{
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(95, 80, 70);
+}
+#navbarNavDropdown ul {
+    padding: 0px 0px 0px 100x;
+}
+#navbarNavDropdown ul li  {
+        padding: 0px 20px ;
+}
+#navbarNavDropdown ul a {
+        font-size: 20px;
+        font-weight: 500;
+}
+.menu-2-banner{
+    margin-bottom: 30px;
+}
+.cha_menu_trademark{
+    position: relative;
+    margin-top: 6.6px;  
+    color: #5a554ed6;
+}
+.cha_menu_trademark:hover{
+    color: rgb(26, 25, 25);
+}
+
+.cha_menu_trademark:hover .menu_trademark{
+    display: block;
+}
+.menu_trademark{
+    position: absolute;
+    list-style: none;   
+    display: none;
+    z-index: 90;
+    background-color: #FFEBCe;
+}
+.menu_trademark li:hover{
+    background-color: rgb(227, 236, 173);
+}
+.menu_trademark li{
+    width: 160px;
+    text-align: center;
+    display: block;
+   
+}
+.menu_trademark li a{
+    text-decoration: none;
+    color: rgb(95, 80, 70);
+}
+/* sản phẩm  */
+
+.abc{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-gap: 15px;
+}
+#onload {
+    margin-top:40px;
+}
+.box1{
+    box-shadow: 0px -1px 8px -1px #e58484;
+    width: 100%;
+    padding: 3.2% 2% 2% 2%;
+    height: 400px;
+    max-height: 400px;
+}
+.box1 a{
+    text-decoration: none !important;
+}
+.box1 a{
+    display: flex;
+   justify-content: center;
+   text-decoration: none;
+}
+.box1 a p{
+    margin: 0px;
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+}
+.box1 a label{
+    text-decoration: line-through;
+    color: black;
+    margin: 0px;
+}
+.box1 h4{
+    font-size: 18px;
+    height: 38px;
+    margin-top: 11px;
+    color: #9e4b4bc7;
+}
+.box1 img{
+    max-width: 100%;
+   height: 270px;
+}
+.box1 img:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+    transition: ease 1s;
+}
+.tieude{
+    color: red;
+    margin: 20px 0px;
+}
+.tieude h3 a{
+    text-decoration: none ;
+    color: red;
+}
+/* footer */
+.footer{
+    height: 300px;
+    background-color: #cec5c5;
+    margin-top: 50px;
+    padding: 15px 30px ;
+}
+.footer-lef a{
+    text-decoration: none !important;
+    color: black;
+}
+a .icon-youtobe{
+    margin-top: 20px;
+    font-size: 70px;
+    color: red;
+    margin-left: 40px;
+}
+a .icon-facebook{
+    color: blue;
+    font-size:60px;
+    margin-top: -10px;
+}
+a .icon-twiter{
+    margin-left: 40px;
+    font-size: 70px;
+}
